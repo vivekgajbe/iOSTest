@@ -47,7 +47,6 @@ class BaseClass: UIViewController {
         }
         
         let isReachable = flags.contains(.reachable)
-//        let needsConnection = flags.contains(.connectionRequired)
         
         return isReachable //&& !needsConnection)
     }

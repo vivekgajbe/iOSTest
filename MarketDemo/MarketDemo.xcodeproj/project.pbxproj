@@ -15,6 +15,15 @@
 		EE28447D1F87E63F00CC9556 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28446D1F87E63F00CC9556 /* Constants.swift */; };
 		EE2844801F87E63F00CC9556 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2844741F87E63F00CC9556 /* HomeViewController.swift */; };
 		EE2844821F87E63F00CC9556 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28447A1F87E63F00CC9556 /* RequestManager.swift */; };
+		EE45855B1F89348700C84C69 /* clsProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45855A1F89348700C84C69 /* clsProductEntity.swift */; };
+		EE4585601F89431600C84C69 /* clsProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45855F1F89431600C84C69 /* clsProductCollectionViewCell.swift */; };
+		EE49BE851F8B303C00F73C20 /* MarketDemo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EE49BE841F8B303C00F73C20 /* MarketDemo.sqlite */; };
+		EE49BE881F8B306900F73C20 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE49BE871F8B306900F73C20 /* libsqlite3.0.tbd */; };
+		EE49BE8A1F8B307000F73C20 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE49BE891F8B307000F73C20 /* libsqlite3.tbd */; };
+		EE49BE8D1F8B30E200F73C20 /* SqlCommonOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49BE8B1F8B30E200F73C20 /* SqlCommonOperations.swift */; };
+		EE49BE8E1F8B30E200F73C20 /* UsersOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49BE8C1F8B30E200F73C20 /* UsersOperations.swift */; };
+		EE49BE931F8B375500F73C20 /* clsCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49BE921F8B375500F73C20 /* clsCardTableViewCell.swift */; };
+		EE94A2631F8A96D8007645BB /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE94A2621F8A96D8007645BB /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,16 @@
 		EE28446D1F87E63F00CC9556 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE2844741F87E63F00CC9556 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE28447A1F87E63F00CC9556 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		EE45855A1F89348700C84C69 /* clsProductEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsProductEntity.swift; sourceTree = "<group>"; };
+		EE45855F1F89431600C84C69 /* clsProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE49BE841F8B303C00F73C20 /* MarketDemo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarketDemo.sqlite; sourceTree = "<group>"; };
+		EE49BE871F8B306900F73C20 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		EE49BE891F8B307000F73C20 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EE49BE8B1F8B30E200F73C20 /* SqlCommonOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqlCommonOperations.swift; sourceTree = "<group>"; };
+		EE49BE8C1F8B30E200F73C20 /* UsersOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersOperations.swift; sourceTree = "<group>"; };
+		EE49BE901F8B34D900F73C20 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EE49BE921F8B375500F73C20 /* clsCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsCardTableViewCell.swift; sourceTree = "<group>"; };
+		EE94A2621F8A96D8007645BB /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE49BE8A1F8B307000F73C20 /* libsqlite3.tbd in Frameworks */,
+				EE49BE881F8B306900F73C20 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +67,7 @@
 			children = (
 				EE2844561F87DDC000CC9556 /* MarketDemo */,
 				EE2844551F87DDC000CC9556 /* Products */,
+				EE49BE861F8B306900F73C20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2844691F87E63F00CC9556 /* Application */,
+				EE94A2641F8A9D40007645BB /* DataBase */,
 				EE2844781F87E63F00CC9556 /* Entity */,
 				EE2844791F87E63F00CC9556 /* Network Layer */,
 				EE28445B1F87DDC000CC9556 /* Main.storyboard */,
@@ -74,10 +97,13 @@
 		EE2844691F87E63F00CC9556 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				EE94A2611F8A96B6007645BB /* CartViewController */,
 				EE28446A1F87E63F00CC9556 /* AppDelegate */,
 				EE2844731F87E63F00CC9556 /* HomeScreen */,
+				EE45855C1F8942F200C84C69 /* CustomCell */,
 				EE28446C1F87E63F00CC9556 /* BaseClass.swift */,
 				EE28446D1F87E63F00CC9556 /* Constants.swift */,
+				EE49BE8F1F8B34AD00F73C20 /* Other */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -101,6 +127,7 @@
 		EE2844781F87E63F00CC9556 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EE4585591F89346200C84C69 /* clsProductEntity */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -111,6 +138,90 @@
 				EE28447A1F87E63F00CC9556 /* RequestManager.swift */,
 			);
 			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		EE4585591F89346200C84C69 /* clsProductEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EE45855A1F89348700C84C69 /* clsProductEntity.swift */,
+			);
+			path = clsProductEntity;
+			sourceTree = "<group>";
+		};
+		EE45855C1F8942F200C84C69 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE49BE911F8B375500F73C20 /* UITableViewCell */,
+				EE45855D1F8942F200C84C69 /* CollectionCell */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		EE45855D1F8942F200C84C69 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE45855E1F8942F200C84C69 /* clsProductCell */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		EE45855E1F8942F200C84C69 /* clsProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE45855F1F89431600C84C69 /* clsProductCollectionViewCell.swift */,
+			);
+			path = clsProductCell;
+			sourceTree = "<group>";
+		};
+		EE49BE861F8B306900F73C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE49BE891F8B307000F73C20 /* libsqlite3.tbd */,
+				EE49BE871F8B306900F73C20 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE49BE8F1F8B34AD00F73C20 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE49BE901F8B34D900F73C20 /* Bridging-Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EE49BE911F8B375500F73C20 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE49BE921F8B375500F73C20 /* clsCardTableViewCell.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		EE94A2611F8A96B6007645BB /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE94A2621F8A96D8007645BB /* CartViewController.swift */,
+			);
+			path = CartViewController;
+			sourceTree = "<group>";
+		};
+		EE94A2641F8A9D40007645BB /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				EE49BE8B1F8B30E200F73C20 /* SqlCommonOperations.swift */,
+				EE49BE8C1F8B30E200F73C20 /* UsersOperations.swift */,
+				EE49BE841F8B303C00F73C20 /* MarketDemo.sqlite */,
+				EE94A28D1F8AA0FF007645BB /* CartEntity */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		EE94A28D1F8AA0FF007645BB /* CartEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CartEntity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +285,7 @@
 			files = (
 				EE2844621F87DDC000CC9556 /* LaunchScreen.storyboard in Resources */,
 				EE28445F1F87DDC000CC9556 /* Assets.xcassets in Resources */,
+				EE49BE851F8B303C00F73C20 /* MarketDemo.sqlite in Resources */,
 				EE28445D1F87DDC000CC9556 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,10 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE4585601F89431600C84C69 /* clsProductCollectionViewCell.swift in Sources */,
 				EE28447D1F87E63F00CC9556 /* Constants.swift in Sources */,
+				EE49BE931F8B375500F73C20 /* clsCardTableViewCell.swift in Sources */,
+				EE45855B1F89348700C84C69 /* clsProductEntity.swift in Sources */,
 				EE28447B1F87E63F00CC9556 /* AppDelegate.swift in Sources */,
+				EE94A2631F8A96D8007645BB /* CartViewController.swift in Sources */,
 				EE2844801F87E63F00CC9556 /* HomeViewController.swift in Sources */,
+				EE49BE8E1F8B30E200F73C20 /* UsersOperations.swift in Sources */,
 				EE2844821F87E63F00CC9556 /* RequestManager.swift in Sources */,
+				EE49BE8D1F8B30E200F73C20 /* SqlCommonOperations.swift in Sources */,
 				EE28447C1F87E63F00CC9556 /* BaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +441,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "83926232-a160-4c00-bc72-0e8c643fd2fc";
 				PROVISIONING_PROFILE_SPECIFIER = Winjit_Dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Volumes/MacintoshHD2/Vivek Projects/R&D projects/Swift/iOSTest/MarketDemo/MarketDemo/Application/Other/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +460,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "83926232-a160-4c00-bc72-0e8c643fd2fc";
 				PROVISIONING_PROFILE_SPECIFIER = Winjit_Dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Volumes/MacintoshHD2/Vivek Projects/R&D projects/Swift/iOSTest/MarketDemo/MarketDemo/Application/Other/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
