@@ -12,23 +12,20 @@ class Constants: NSObject
 {
     
     static let objAppDel = UIApplication.shared.delegate as! AppDelegate
-    static let strWebserviceURL = "http://servicestest.touchbase.in/interview/api/Employee/ManageEmployee"
+    static let strWebserviceURL = "https://mobiletest-hackathon.herokuapp.com/getdata/"
     
-    static let AlertTitle = "TestDemo"
+    static let AlertTitle = "MarketDemo"
     static let InternetNotFound = "Internet connection not available!"
     
-    //********************************************************/
-    //*******************  Storyboard IDs  *******************/
-    //********************************************************/
-    
-    static let kHomeScreen = "HomeViewController"
-    static let kDetailScreen = "DetailViewController"
-    
-    static let kGetEmployee = "GetEmployee"
-    static let kSaveEmployee = "SaveEmployee"
-    static let kDeleteEmployee = "DeleteEmployee"
 
 
+    //CollectionView Identifier
+    static let kColIdenProduct = "cellProduct"
+    
+    //TableView Identifier
+    static let kTblIdenCellCart = "cellCard"
+    
+    
     // show Alert in swift
     internal static func showAlert(titleString:String,messageString:String , delegate:AnyObject){
         
@@ -40,3 +37,4 @@ class Constants: NSObject
         
     }
 }
+    
