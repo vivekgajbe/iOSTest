@@ -12,21 +12,17 @@ import SystemConfiguration
 
 class BaseClass: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-   
-    // MARK: - Navigation
-
+    // MARK: - CheckInternet
     func checkInternet() -> Bool
     {
         var zeroAddress = sockaddr_in()
@@ -48,8 +44,6 @@ class BaseClass: UIViewController {
         
         let isReachable = flags.contains(.reachable)
         
-        return isReachable //&& !needsConnection)
+        return isReachable
     }
-
-
 }

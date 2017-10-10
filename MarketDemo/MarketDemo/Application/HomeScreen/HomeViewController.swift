@@ -10,38 +10,36 @@ import UIKit
 
 class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout
 {
-      var dataTask: URLSessionDataTask?
-    typealias QueryResult = ([AnyObject]?, String) -> ()
-    // 1
-    let defaultSession = URLSession(configuration: .default)
+    //MARK:Variable declaration
+    var dataTask: URLSessionDataTask?
     
     var arrmProductDetails = NSMutableArray()
     @IBOutlet var colViwProduct: UICollectionView!
     @IBOutlet var actViwLoader: UIActivityIndicatorView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
-        colViwProduct?.alwaysBounceVertical = true
-        
+
         //call for fetch product details
         self.getAllProductDetails()
-        // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)
+    {
         super.viewWillAppear(true)
-    
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     //MARK:- collection view delegate method
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
         return arrmProductDetails.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: Constants.kColIdenProduct, for: indexPath as IndexPath) as! clsProductCollectionViewCell)
         let entCategoryDetails  = self.arrmProductDetails.object(at: indexPath.row) as! clsProductEntity
         
@@ -77,8 +75,7 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
         
         return cell
     }
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let iCellWidth = (self.view.frame.size.width / 2) - 15;
@@ -87,13 +84,11 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
         return CGSize(width: iCellWidth, height: iCellHeight)
     }
     
-    //MARK:- old
-    // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+    //MARK:- user define method
     func btnAddToCardClicked(sender:UIButton)
     {
         //For add to card
-        
-            let entCategoryDetails  = arrmProductDetails.object(at: sender.tag) as! clsProductEntity
+        let entCategoryDetails  = arrmProductDetails.object(at: sender.tag) as! clsProductEntity
         
         let bIsInsert : Bool = UsersOperations().saveProductToCard(entProductDetails: entCategoryDetails)
             if bIsInsert == true
@@ -184,25 +179,22 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
                 entProduct.strPhoneNumber = String(describing: number)
             }
             
+            //Code is hidden as is no screen to display detail image in a requirment
 //            let prodImage : Array<Any>?
 //            prodImage = dict["productGallery"] as? Array<Any> as! Array<String>
 //            for objImages in prodImage!
 //            {
 //              entProduct.arrProductGallery?.append(objImages as! String)
 //            }
-            
 
             arrProduct.add(entProduct)
         }
-        
-        
+
      return arrProduct
     }
-    
-    
 }
 
-
+//Asyncronously loading of image and store it in a catche
 let imageChache = NSCache<AnyObject, AnyObject>()
 
 extension UIImageView {

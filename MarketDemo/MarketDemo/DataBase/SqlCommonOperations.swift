@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import SQLite
 
 class SqlCommonOperations: NSObject {
     
@@ -17,7 +16,6 @@ class SqlCommonOperations: NSObject {
     
     /**
     Get data base path
-    
     - Returns: String Database path
     */
     func getDBPath () -> String
@@ -33,7 +31,6 @@ class SqlCommonOperations: NSObject {
     
     /**
     Copy database from bundle to a document folder if required
-    
     */
     func copyDBIfNeeded()
     {
@@ -62,7 +59,6 @@ class SqlCommonOperations: NSObject {
     
     /**
     Open Database
-    
     - Returns: Bool Database is opened or not
     */
     func openDB() -> Bool
@@ -79,7 +75,6 @@ class SqlCommonOperations: NSObject {
     
     /**
     Close database connection
-    
     */
     func closeDB()
     {
@@ -90,7 +85,6 @@ class SqlCommonOperations: NSObject {
     
     /**
     Executes the non query provided in parameter. (Like delete)
-    
     - Parameters: query sql query
     */
     func executeNonQuery(query : String) -> Bool
