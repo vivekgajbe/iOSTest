@@ -128,6 +128,16 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
 
                 self.arrmProductDetails = self.parseJsonForProductDetails(response: responseJSON)
                 
+                DispatchQueue.main.async
+                    {
+                    if self.arrmProductDetails.count > 0
+                    {
+                        self.colViwProduct.reloadData()
+                        self.actViwLoader.stopAnimating()
+                        self.actViwLoader.isHidden = true
+                    }
+                }
+                
             }
         }
         
@@ -184,12 +194,7 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
 
             arrProduct.add(entProduct)
         }
-        if self.arrmProductDetails.count > 0
-        {
-            self.colViwProduct.reloadData()
-            self.actViwLoader.stopAnimating()
-            self.actViwLoader.isHidden = true
-        }
+        
         
      return arrProduct
     }
