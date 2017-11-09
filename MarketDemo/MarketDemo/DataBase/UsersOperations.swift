@@ -63,6 +63,7 @@ class UsersOperations: SqlCommonOperations {
         return b
         
     }
+    
     /**
      get all CardDetails information from local database
      */
@@ -103,6 +104,7 @@ class UsersOperations: SqlCommonOperations {
         }
         return arrmAllProduct
     }
+    
     /**
      delete ProductDetails information from local database
      */

@@ -16,21 +16,20 @@ class CartViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
     @IBOutlet var lblTotalPrice: UILabel!
     
     
-    
     //MARK:- initial method declaration
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)
+    {
         super.viewWillAppear(true)
         self.getCartDataFromLocalDB()
 
     }
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -73,6 +72,7 @@ class CartViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         }
         
     }
+    
     //Delete record from cart
     func deleteFromCart(sender:UIButton)
     {
@@ -89,12 +89,13 @@ class CartViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         }
         tblCardView.reloadData()
     }
+    
   // MARK: - Table view data source
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return arrmCartProducts.count
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 140

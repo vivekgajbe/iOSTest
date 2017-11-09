@@ -14,7 +14,6 @@
 		EE28447C1F87E63F00CC9556 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28446C1F87E63F00CC9556 /* BaseClass.swift */; };
 		EE28447D1F87E63F00CC9556 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28446D1F87E63F00CC9556 /* Constants.swift */; };
 		EE2844801F87E63F00CC9556 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2844741F87E63F00CC9556 /* HomeViewController.swift */; };
-		EE2844821F87E63F00CC9556 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28447A1F87E63F00CC9556 /* RequestManager.swift */; };
 		EE45855B1F89348700C84C69 /* clsProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45855A1F89348700C84C69 /* clsProductEntity.swift */; };
 		EE4585601F89431600C84C69 /* clsProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45855F1F89431600C84C69 /* clsProductCollectionViewCell.swift */; };
 		EE49BE851F8B303C00F73C20 /* MarketDemo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EE49BE841F8B303C00F73C20 /* MarketDemo.sqlite */; };
@@ -36,7 +35,6 @@
 		EE28446C1F87E63F00CC9556 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		EE28446D1F87E63F00CC9556 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE2844741F87E63F00CC9556 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EE28447A1F87E63F00CC9556 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		EE45855A1F89348700C84C69 /* clsProductEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsProductEntity.swift; sourceTree = "<group>"; };
 		EE45855F1F89431600C84C69 /* clsProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE49BE841F8B303C00F73C20 /* MarketDemo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarketDemo.sqlite; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				EE2844691F87E63F00CC9556 /* Application */,
 				EE94A2641F8A9D40007645BB /* DataBase */,
 				EE2844781F87E63F00CC9556 /* Entity */,
-				EE2844791F87E63F00CC9556 /* Network Layer */,
 				EE28445B1F87DDC000CC9556 /* Main.storyboard */,
 				EE28445E1F87DDC000CC9556 /* Assets.xcassets */,
 				EE2844601F87DDC000CC9556 /* LaunchScreen.storyboard */,
@@ -130,14 +127,6 @@
 				EE4585591F89346200C84C69 /* clsProductEntity */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		EE2844791F87E63F00CC9556 /* Network Layer */ = {
-			isa = PBXGroup;
-			children = (
-				EE28447A1F87E63F00CC9556 /* RequestManager.swift */,
-			);
-			path = "Network Layer";
 			sourceTree = "<group>";
 		};
 		EE4585591F89346200C84C69 /* clsProductEntity */ = {
@@ -305,7 +294,6 @@
 				EE94A2631F8A96D8007645BB /* CartViewController.swift in Sources */,
 				EE2844801F87E63F00CC9556 /* HomeViewController.swift in Sources */,
 				EE49BE8E1F8B30E200F73C20 /* UsersOperations.swift in Sources */,
-				EE2844821F87E63F00CC9556 /* RequestManager.swift in Sources */,
 				EE49BE8D1F8B30E200F73C20 /* SqlCommonOperations.swift in Sources */,
 				EE28447C1F87E63F00CC9556 /* BaseClass.swift in Sources */,
 			);
