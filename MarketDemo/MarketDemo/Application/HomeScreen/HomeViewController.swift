@@ -82,7 +82,7 @@ class HomeViewController: BaseClass ,UICollectionViewDelegate ,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let iCellWidth = (self.view.frame.size.width / 2) - 15;
-        let iCellHeight = iCellWidth * 1.2
+        let iCellHeight : CGFloat = 210
         
         return CGSize(width: iCellWidth, height: iCellHeight)
     }

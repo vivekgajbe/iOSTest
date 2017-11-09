@@ -39,6 +39,11 @@ class CartViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
     {
         arrmCartProducts = UsersOperations().getCartDetails()//getch card data
         tblCardView.reloadData()
+        if arrmCartProducts.count == 0
+        {
+            lblTotalPrice.text! = "Total Price : \u{20B9} 0"
+        }
+        else
         if arrmCartProducts.count > 0
         {
             var iTotal = NSInteger()
@@ -92,7 +97,7 @@ class CartViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 150
+        return 140
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
